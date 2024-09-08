@@ -1,0 +1,18 @@
+﻿using Microsoft.Extensions.DependencyInjection;
+using Promos.Application.Data;
+using Promos.Application.Repositories;
+using Promos.Application.Services;
+
+namespace Promos.Application;
+
+public static class ApplicationServiceCollectionExtension
+{
+    public static IServiceCollection AddApplication(this IServiceCollection services)
+    {
+        services.AddDbContext<PromotionsContext>();
+        services.AddTransient<IPromotionRepository, PromotionRepository>();
+        services.AddTransient<IPromotionService, PromotionService>();
+        
+        return services;
+    }
+}

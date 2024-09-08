@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Promos.API", "Promos.API\Promos.API.csproj", "{A21CC8F1-7BD5-47F4-9565-41B2C4B70C3D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Promos.Application", "Promos.Application\Promos.Application.csproj", "{DE28B250-628F-4754-8C2D-F32B5C2CD778}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Promos.Contracts", "Promos.Contracts\Promos.Contracts.csproj", "{9DACF951-2AF5-416E-B76C-4841A494D117}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A21CC8F1-7BD5-47F4-9565-41B2C4B70C3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A21CC8F1-7BD5-47F4-9565-41B2C4B70C3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A21CC8F1-7BD5-47F4-9565-41B2C4B70C3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A21CC8F1-7BD5-47F4-9565-41B2C4B70C3D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE28B250-628F-4754-8C2D-F32B5C2CD778}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE28B250-628F-4754-8C2D-F32B5C2CD778}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE28B250-628F-4754-8C2D-F32B5C2CD778}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE28B250-628F-4754-8C2D-F32B5C2CD778}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9DACF951-2AF5-416E-B76C-4841A494D117}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9DACF951-2AF5-416E-B76C-4841A494D117}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9DACF951-2AF5-416E-B76C-4841A494D117}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9DACF951-2AF5-416E-B76C-4841A494D117}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
