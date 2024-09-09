@@ -1,4 +1,6 @@
+using Microsoft.EntityFrameworkCore;
 using Promos.Application;
+using Promos.Application.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -14,6 +16,13 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+using (var scope = app.Services.CreateScope())
+{
+    var context = scope.ServiceProvider.GetRequiredService<PromotionsContext>();
+    await context.Database.MigrateAsync();
+}
+
 
 app.UseHttpsRedirection();
 

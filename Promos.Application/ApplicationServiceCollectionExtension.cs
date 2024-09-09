@@ -10,8 +10,8 @@ public static class ApplicationServiceCollectionExtension
     public static IServiceCollection AddApplication(this IServiceCollection services)
     {
         services.AddDbContext<PromotionsContext>();
-        services.AddTransient<IPromotionRepository, PromotionRepository>();
-        services.AddTransient<IPromotionService, PromotionService>();
+        services.AddScoped<IPromotionRepository, PromotionRepository>();
+        services.AddScoped<IPromotionService, PromotionService>();
         
         return services;
     }

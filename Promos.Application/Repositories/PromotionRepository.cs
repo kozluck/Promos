@@ -12,8 +12,7 @@ public class PromotionRepository : IPromotionRepository
     {
         _context = context;
     }
-
-
+    
     public async Task<bool> CreateAsync(Promotion promotion, CancellationToken token = default)
     {
         await _context.Promotions.AddAsync(promotion, token);
